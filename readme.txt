@@ -1,12 +1,13 @@
 
 PROJECT DESCRIPTION
 The project "unscented Kalman filter" is based on the same structure as the extended Kalman filter.
-It uses a main file that calls a function called ProcessMeasurement. Anything important happens in this function. The function is part of the class ukf.
+It uses a main file that calls a function called ProcessMeasurement.. The function is part of the class ukf.
 
 
 C++ QUIZZES
-The quizzes including the solutions of them are included in the file ukf.cpp. They are individual functions, which don't need any special environment. The solution of the quizzes are given here and also the expected results.
-The quizzes can easily evaluated: if every value of the student solution (vectors and matrices) differs less than 0.001 from the original solution, the quizz is passed, otherwise failed.
+ ukf.cpp is the main processing pipleline.  Many operations which are repeatable have beem turnd into functions for
+ calling repeatedly. The initial process noise values were too gigh, so I kept tuneing it until we had a good threshold for
+ NIS for Radar and Lidar. For the 95% case we are seeing values 3.6% and 2.4% which is close to 5%
 
 
 
